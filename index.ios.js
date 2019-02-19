@@ -10,21 +10,19 @@
 
 'use strict';
 
-const EventEmitter = require('EventEmitter');
-const Image = require('Image');
-const RCTNavigatorManager = require('NativeModules').NavigatorManager;
-const React = require('React');
+const EventEmitter = require('events');
+const ReactNative = require('react-native/Libraries/Renderer/shims/ReactNative');
+const { Image, StyleSheet, View, requireNativeComponent, NativeModules } = require('react-native');
+
+const RCTNavigatorManager = NativeModules.NavigatorManager;
+const React = require('react');
 const PropTypes = require('prop-types');
-const ReactNative = require('ReactNative');
-const StaticContainer = require('StaticContainer.react');
-const StyleSheet = require('StyleSheet');
-const TVEventHandler = require('TVEventHandler');
-const View = require('View');
-const DeprecatedViewPropTypes = require('DeprecatedViewPropTypes');
+const StaticContainer = require('react-native/Libraries/Components/StaticContainer.react');
+const TVEventHandler = require('react-native/Libraries/Components/AppleTV/TVEventHandler');
+const DeprecatedViewPropTypes = require('react-native/Libraries/DeprecatedPropTypes/DeprecatedViewPropTypes');
 
 const createReactClass = require('create-react-class');
 const invariant = require('fbjs/lib/invariant');
-const requireNativeComponent = require('requireNativeComponent');
 
 /* $FlowFixMe(>=0.54.0 site=react_native_oss) This comment suppresses an error
  * found when Flow v0.54 was deployed. To see the error delete this comment and

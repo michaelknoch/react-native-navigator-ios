@@ -1,7 +1,7 @@
 {
   "name": "react-native-navigator-ios",
   "version": "1.0.0",
-  "description": "",
+  "description": "The React Native NavigatoriOS from version < 0.57",
   "main": "index.ios.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/michaelknoch/react-native-navigator-ios.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/michaelknoch/react-native-navigator-ios/issues"
   },

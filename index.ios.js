@@ -315,7 +315,7 @@ const NavigatorIOS = createReactClass({
       /**
        * The React Class to render for this route
        */
-      component: PropTypes.func.isRequired,
+      component: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
 
       /**
        * The title displayed in the navigation bar and the back button for this

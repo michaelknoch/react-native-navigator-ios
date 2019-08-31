@@ -10,7 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/michaelknoch/react-native-navigator-ios.git"
   },
-  "author": "",
+  "types": "index.d.ts",
+  "author": "Facebook",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/michaelknoch/react-native-navigator-ios/issues"
